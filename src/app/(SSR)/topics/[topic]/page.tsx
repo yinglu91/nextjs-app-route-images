@@ -43,7 +43,7 @@ export default async function Page({ params: { topic } }: PageProps) {
                         width={250}
                         height={250}
                         alt={image.description}
-                        key={image.urls.raw}
+                        key={image.id}
                         className={styles.image}
                     />
                 ))
