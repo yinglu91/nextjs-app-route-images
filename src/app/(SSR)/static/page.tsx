@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Alert } from "@/components/bootstrap";
 
 export const metadata = {
-    title: "Static Fetching - NextJS 13.4 Image Gallery",
+    title: "Static Fetching - Image Gallery",
 }
 
 // https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#fetching-data-on-the-server-with-fetch

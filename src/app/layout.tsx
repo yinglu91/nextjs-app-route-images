@@ -8,8 +8,8 @@ import { QueryClientProviderWrapper } from "./ReactQueryProviderWrapper";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "NextJS 13.4 Image Gallery",
-  description: "Tutorial project by Coding in Flow",
+  title: "Image Gallery",
+  description: "Nextjs 13.4 Image Gallery",
 };
 
 type Props = {

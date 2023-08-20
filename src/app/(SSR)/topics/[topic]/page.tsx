@@ -15,7 +15,7 @@ interface PageProps {
 
 export function generateMetadata({ params: { topic } }: PageProps): Metadata {
     return {
-        title: topic + " - NextJS 13.4 Image Gallery",
+        title: topic + " - Image Gallery",
     }
 }
 

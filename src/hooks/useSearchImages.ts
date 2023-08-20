@@ -2,6 +2,7 @@ import { UnsplashImage } from "@/models/unsplash-image";
 import { useQuery } from "@tanstack/react-query"
 
 const fetchImages = async (searchTerm: string) => {
+    // http://localhost:3000/api/search?query=papaya
     const response = await fetch(`/api/search?query=${searchTerm}`);
 
     if (!response.ok) {

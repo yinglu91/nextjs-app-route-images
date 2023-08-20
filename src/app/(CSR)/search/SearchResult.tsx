@@ -9,7 +9,7 @@ type Props = {
 
 // rafce <tab>
 const SearchResult = ({searchTerm}: Props) => {
-  const { data, isFetching, isError } = useSearchImages(searchTerm);
+  const { data:imageArr, isFetching, isError } = useSearchImages(searchTerm);
 
   return (
     <>
@@ -18,12 +18,12 @@ const SearchResult = ({searchTerm}: Props) => {
       <div className="d-flex flex-column align-items-center">
         {isFetching && <Spinner animation="border" />}
         {isError && <p>Something went wrong. Please try again.</p>}
-        {data?.length === 0 && <p>Nothing found. Try a different query!</p>}
+        {imageArr?.length === 0 && <p>Nothing found. Try a different query!</p>}
       </div>
 
-      {searchTerm && data && (
+      {searchTerm && imageArr && (
        <>
-          {data.map((image) => (
+          {imageArr.map((image) => (
             <Image
               src={image.urls.raw}
               width={250}

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Alert } from "@/components/bootstrap";
 
 export const metadata = {
-    title: "Incremental Static Regeneration - NextJS 13.4 Image Gallery",
+    title: "Incremental Static Regeneration - Image Gallery",
 }
 
 export const revalidate = 15;

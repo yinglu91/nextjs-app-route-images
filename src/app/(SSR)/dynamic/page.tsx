@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Alert } from "@/components/bootstrap";
 
 export const metadata = {
-    title: "Dynamic Fetching - NextJS 13.4 Image Gallery",
+    title: "Dynamic Fetching - Image Gallery",
 }
 
 export const revalidate = 0;

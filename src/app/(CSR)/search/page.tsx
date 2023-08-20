@@ -1,7 +1,7 @@
 import Search from "./Search"
 
 export const metadata = {
-    title: "Search - NextJS 13.4 Image Gallery",
+    title: "Search - Image Gallery",
 }
 
 // localhost:3000/search
