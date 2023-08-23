@@ -16,6 +16,6 @@ const fetchImages = async (searchTerm: string) => {
 
 export const useSearchImages = (searchTerm: string) => {
     return useQuery(['useSearchImages', searchTerm], () => fetchImages(searchTerm), {
-        enabled: true
+        staleTime: 1*60*1000   // 1 munite
     })
 }

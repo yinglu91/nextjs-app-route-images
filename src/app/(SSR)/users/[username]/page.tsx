@@ -22,7 +22,7 @@ export async function generateMetadata({ params: { username } }: PageProps): Pro
     const user = await getUser(username);
 
     return {
-        title: ([user.first_name, user.last_name].filter(Boolean).join(" ") || user.username) + " - NextJS 13.4 Image Gallery",
+        title: ([user.first_name, user.last_name].filter(Boolean).join(" ") || user.username) + " - Image Gallery",
     }
 }
 
@@ -38,7 +38,7 @@ export default async function Page({ params: { username } }: PageProps) {
             <h1>{user.username}</h1>
             <p>First name: {user.first_name}</p>
             <p>Last name: {user.last_name}</p>
-            <a href={"https://unsplash.com/" + user.username}>Unsplash profile</a>
+            <a href={"https://unsplash.com/" + user.username} target="_blank">Unsplash profile</a>
         </div>
     );
 }

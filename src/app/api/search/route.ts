@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 // localhost:3000/api/search?query=love
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
-    const query = searchParams.get("query");
+    const query = searchParams.get("query"); // love
 
     if (!query) {
         return NextResponse.json({ error: "No query provided" }, { status: 400 });
